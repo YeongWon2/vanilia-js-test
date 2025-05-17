@@ -1,0 +1,63 @@
+@import "filter.css";
+@import "memo.css";
+
+/* 전역 스타일 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#app {
+    width: 100%;
+    min-height: 100dvh;
+    height: auto;
+    position: relative;
+    overflow: auto;
+    padding: 20px;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* 스크롤바 커스터마이징 */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    #app {
+        padding: 10px;
+    }
+}
